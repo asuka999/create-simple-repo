@@ -1,11 +1,26 @@
 {
-  "name": "templates",
+  "name": "yes",
   "version": "0.0.1",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/asuka999/templates.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/asuka999/templates/issues"
+  },
+  "homepage": "https://gitlab.com/asuka999/templates#README",
+  "description": "",
+  "devDependencies": {
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
 }
