@@ -1,4 +1,4 @@
 ## Usage
 ```
-TEMPLATE=app npx sao gitlab.com:asuka999/templates --clone myapp
+TEMPLATE=app npx sao gitlab.com:asuka999/generators --clone myapp
 ```

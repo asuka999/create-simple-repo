@@ -1,9 +1,11 @@
+const git = require('./lib/git')
 const eslint = require('./lib/eslint')
-
+const prettier = require('./lib/prettier')
+const babel = require('./lib/babel')
 const dir = process.env.TEMPLATE || 'app'
 
 module.exports = {
-  templateDir: `./${dir}`,
+  templateDir: `./templates/${dir}`,
 
   actions() {
     return [
@@ -36,7 +38,9 @@ module.exports = {
   },
 
   async completed() {
-    this.gitInit()
+    await git()
+    await babel()
+    await prettier()
     await eslint()
     // await this.npmInstall() ({packages: devDeps, saveDev: true})
     this.showProjectTips()
