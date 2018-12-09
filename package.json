@@ -1,5 +1,5 @@
 {
-  "name": "yes",
+  "name": "generators",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/asuka999/templates.git"
+    "url": "git+ssh://git@gitlab.com/asuka999/generators.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/asuka999/templates/issues"
+    "url": "https://gitlab.com/asuka999/generators/issues"
   },
-  "homepage": "https://gitlab.com/asuka999/templates#README",
+  "homepage": "https://gitlab.com/asuka999/generators#README",
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
