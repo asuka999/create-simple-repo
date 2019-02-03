@@ -1,9 +1,20 @@
 {
-  "name": "generators",
+  "name": "create-simple-repo",
   "version": "0.0.1",
-  "main": "index.js",
+  "bin": {
+    "create-simple-repo": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "bin",
+    "helpers",
+    "lib",
+    "main",
+    "templates"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cd test && node create.test.js",
+    "test:update": "npm test -- -u",
     "eslint": "eslint \"**/*.js\"",
     "prettier": "prettier \"**/*.js\"",
     "fix": "npm run prettier -- --write && npm run eslint -- --fix"
@@ -12,12 +23,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/asuka999/generators.git"
+    "url": "git+ssh://git@github.com/asuka999/create-simple-repo.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/asuka999/generators/issues"
+    "url": "https://github.com/asuka999/create-simple-repo/issues"
   },
-  "homepage": "https://gitlab.com/asuka999/generators#README",
+  "homepage": "https://github.com/asuka999/create-simple-repo#README",
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
@@ -28,11 +39,11 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "prettier": "1.15.3"
+    "prettier": "1.15.3",
+    "rimraf": "^2.6.3"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "yes@0.0.1",
   "dependencies": {
+    "dir-compare": "^1.7.1",
     "lodash": "^4.17.11"
   }
 }

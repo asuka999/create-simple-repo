@@ -1,4 +1,9 @@
+# create-simple-repo
+> craete a node repository by some scripts
+
 ## Usage
 ```
-TEMPLATE=app npx sao gitlab.com:asuka999/generators --clone myapp
+npm init simple-repo my-node-repo
+# or
+npx create-simple-repo my-node-repo
 ```
